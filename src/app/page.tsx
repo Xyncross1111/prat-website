@@ -21,21 +21,21 @@ export default function Home() {
       country: "INDONESIA",
       location: "Museum di tengah",
       date: "15 March 2024",
-      image: "/public/placeholder-logo.png",
+      image: "/placeholder-logo.png",
     },
     {
       city: "LONDON",
       country: "UK",
       location: "Greenwich hotel & tower bridge",
       date: "18 June 2024",
-      image: "/public/placeholder-logo.png",
+      image: "/placeholder-logo.png",
     },
     {
       city: "NEW YORK",
       country: "USA",
       location: "Plaza, NY",
       date: "21 June 2024",
-      image: "/public/placeholder-logo.png",
+      image: "/placeholder-logo.png",
     },
   ]
 
@@ -178,7 +178,7 @@ export default function Home() {
             <TopicCard
               title="CONTENT CREATION"
               description="Understanding Your Audience, Content Strategy, Storytelling, Copywriting, Video, Sharing Secrets of Viral Posts, Building Your Personal Brand"
-              image="/public/placeholder-logo.png"
+              image="/placeholder-logo.png"
             />
             <TopicCard
               title="STARTUPS & BRANDS"
@@ -204,22 +204,22 @@ export default function Home() {
               {
                 title: "LEARN",
                 image:
-                  "/public/placeholder-logo.png",
+                  "/placeholder-logo.png",
               },
               {
                 title: "NETWORK",
                 image:
-                  "/public/placeholder-logo.png",
+                  "/placeholder-logo.png",
               },
               {
                 title: "2023 RECAP",
                 image:
-                  "/public/placeholder-logo.png",
+                  "/placeholder-logo.png",
               },
               {
                 title: "REVIEWS",
                 image:
-                  "/public/placeholder-logo.png",
+                  "/placeholder-logo.png",
               },
             ].map((feature) => (
               <Card key={feature.title} className="relative aspect-square overflow-hidden bg-black rounded-3xl group">
@@ -253,7 +253,7 @@ export default function Home() {
                 <SpeakerCard
                   name="JORDAN MATTER"
                   title='"Our" Youtuber in The World'
-                  image="/public/placeholder-logo.png"
+                  image="/placeholder-logo.png"
                   socials={true}
                 />
                 {[1, 2, 3].map((i) => (
@@ -261,7 +261,7 @@ export default function Home() {
                     key={i}
                     name={`Speaker ${i}`}
                     title="Influential Creator"
-                    image="/public/placeholder-logo.png"
+                    image="/placeholder-logo.png"
                   />
                 ))}
               </div>
@@ -282,7 +282,7 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto">
             <div className="relative aspect-video rounded-3xl overflow-hidden">
               <Image
-                src="/public/placeholder-logo.png"
+                src="/placeholder-logo.png"
                 alt="2023 Recap"
                 fill
                 className="object-cover"
@@ -313,7 +313,7 @@ export default function Home() {
               {[1, 2, 3].map((i) => (
                 <div key={i} className="relative w-1/3 aspect-video rounded-2xl overflow-hidden">
                   <Image
-                    src="/public/placeholder-logo.png"
+                    src="/placeholder-logo.png"
                     alt={`Speaker ${i}`}
                     fill
                     className="object-cover"
@@ -389,28 +389,28 @@ export default function Home() {
                   name="TSU BEEU"
                   title="@tsu_beeu"
                   quote="If you are not flying here NOW, I have to tell you that this is the best conference that I've ever attended. You're yet to experience something magical!"
-                  image="/public/placeholder-logo.png"
+                  image="/placeholder-logo.png"
                   backgroundColor="bg-gradient-to-br from-blue-600 to-blue-800"
                 />
                 <TestimonialCard
                   name="HIRAL NAGORI"
                   title="@hiral_nagori"
                   quote="This is how to be one of the best when we leave a part of what a power packed community so looks like, right here in the city of dreams!"
-                  image="/public/placeholder-logo.png"
+                  image="/placeholder-logo.png"
                   backgroundColor="bg-gradient-to-br from-yellow-500 to-yellow-700"
                 />
                 <TestimonialCard
                   name="MARTINA"
                   title="International traveler and linguist"
                   quote="Nas summit is all about creating a community of like-minded people to make a positive impact"
-                  image="/public/placeholder-logo.png"
+                  image="/placeholder-logo.png"
                   backgroundColor="bg-gradient-to-br from-orange-500 to-orange-700"
                 />
                 <TestimonialCard
                   name="RICHARD"
                   title="International traveler and linguist"
                   quote="The networking opportunities at Nas Summit are unparalleled. I've made connections that have transformed my business."
-                  image="/public/placeholder-logo.png"
+                  image="/placeholder-logo.png"
                   backgroundColor="bg-gradient-to-br from-purple-600 to-purple-800"
                 />
               </div>
@@ -443,28 +443,28 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <SocialPost
               username="@PRATISHRUTI"
-              avatar="/public/placeholder-logo.png"
+              avatar="/placeholder-logo.png"
               content="Nas summit is all about creating a community of like-minded people to make a positive impact"
               platform="twitter"
             />
             <SocialPost
               username="@PRATISHRUTI"
-              avatar="/public/placeholder-logo.png"
+              avatar="/placeholder-logo.png"
               content="We'd like to have a moment to thank all our sponsors, speakers and attendees. We hope to see you in person at our next event!"
               platform="facebook"
             />
             <SocialPost
               username="@PRATISHRUTI"
-              avatar="/public/placeholder-logo.png"
-              image="/public/placeholder-logo.png"
+              avatar="/placeholder-logo.png"
+              image="/placeholder-logo.png"
               content="MINDVALLEY CEO'S SECRET TO TRANSFORMING LIVES"
               platform="instagram"
               engagement="326k views • 8,569 likes"
             />
             <SocialPost
               username="@PRATISHRUTI"
-              avatar="/public/placeholder-logo.png"
-              image="/public/placeholder-logo.png"
+              avatar="/placeholder-logo.png"
+              image="/placeholder-logo.png"
               content="PRATISHRUTI DUBAI - The Creators Conference"
               platform="instagram"
               engagement="Coming January 2024"

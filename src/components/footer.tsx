@@ -28,7 +28,7 @@ export function Footer() {
           </div>
           <div className="relative w-64 h-64">
             <Image
-              src="/public/placeholder-logo.png"
+              src="/placeholder-logo.png"
               alt="Sponsor illustration"
               fill
               className="object-cover"

@@ -24,7 +24,7 @@ export function TestimonialCard({ name, title, quote, image, backgroundColor = "
             {title && <p className="text-sm text-gray-400">{title}</p>}
           </div>
         </div>
-        <p className="text-sm text-gray-300 italic">"{quote}"</p>
+        <p className="text-sm text-gray-300 italic">{quote}</p>
       </div>
     </Card>
   )

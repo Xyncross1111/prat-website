@@ -6,7 +6,7 @@ export const Hero = () => {
         <section className="relative min-h-screen flex items-center px-6 md:px-12 pt-24">
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/public/placeholder-logo.png"
+                    src="/placeholder-logo.png"
                     alt="Creator gathering crowd"
                     fill
                     className="object-cover brightness-50"
