@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const Attended = () => {
 
-    return (
-        <section className="py-24 bg-gradient-to-b from-black to-purple-900/20">
+    return ( // bg-gradient-to-b from-black to-purple-900/20
+        <section className="py-24 ">
         <div className="container mx-auto px-6 md:px-12">
           <h3 className="text-3xl font-bold mb-12 text-center">ATTENDED COMPANIES</h3>
           <div className="flex flex-wrap gap-8 items-center justify-center">

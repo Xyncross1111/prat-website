@@ -1,14 +1,14 @@
 export const WhatIs = () => {
 
     return (
-        <section className="py-24 bg-black text-white">
+        <section className="py-24 text-black">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center">
             WHAT IS
             <br />
             <span className="text-gradient">NAS SUMMIT?</span>
           </h2>
-          <div className="max-w-3xl mx-auto space-y-6 text-gray-300 text-lg leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-6 text-black text-lg leading-relaxed">
             <p>
               Nas Summit is a global gathering of creators and entrepreneurs. It is the ultimate place to find your
               passion, your next partner, a brand deal, or at least 10 friends. Experts will take the stage and present

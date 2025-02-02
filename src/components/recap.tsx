@@ -5,7 +5,7 @@ import { PlayButton } from "@/components/play-button";
 export const Recap = () => {
 
     return (
-        <section className="py-24 bg-black">
+        <section className="py-24">
         <div className="container mx-auto px-6 md:px-12">
           <div className="relative max-w-6xl mx-auto">
             <div className="relative aspect-video rounded-3xl overflow-hidden">

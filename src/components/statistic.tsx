@@ -1,7 +1,7 @@
 export const Stats = () => {
 
-    return (
-        <section className="py-24 bg-gradient-to-b from-purple-900/20 to-black">
+    return ( // bg-gradient-to-b from-purple-900/20 to-black
+        <section className="py-24 ">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
             WORLDS TOP

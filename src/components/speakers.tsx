@@ -4,8 +4,8 @@ import { SpeakerCard } from "@/components/speaker-card"
 
 export const Speakers = () => {
 
-    return (
-        <section className="py-24 bg-gradient-to-b from-black to-purple-900/20">
+    return (// bg-gradient-to-b from-black to-purple-900/20
+        <section className="py-24 ">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
             THE BEST <span className="text-gradient">SPEAKERS</span>

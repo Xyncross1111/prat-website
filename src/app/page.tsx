@@ -17,9 +17,9 @@ import { CTA } from "@/components/cta"
 export default function Home() {
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen text-black"> 
       <Navbar />
-
+      <div className="bg-gradient-to-b from-[#c074f4] via-white to-[#70c4ec]">
       <Hero />
 
       <Events />
@@ -39,6 +39,7 @@ export default function Home() {
       <Speakers />
 
       <Recap />
+      </div>
 
       <Meet />
 
