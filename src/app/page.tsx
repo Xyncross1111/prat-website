@@ -41,7 +41,7 @@ export default function Home() {
       <Recap />
       </div>
 
-      <Meet />
+      {/* <Meet /> */}
 
       <Socials />
 
