@@ -30,20 +30,24 @@ const events = [
 ]
 
 export const Events = () => {
-
-  return ( // bg-gradient-to-b from-black to-purple-900/20
-    <section className="py-24 ">
+  return (
+    <section className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Upcoming Events</h2>
-        <ScrollArea className="w-full whitespace-nowrap">
-          <div className="flex w-max space-x-6">
-            <div className="flex space-x-6 overflow-x-auto pb-6 -mx-8 px-8 scrollbar-hide">
-                    {events.map((event, index) => (
-                      <EventCard key={index} {...event} />
-                    ))}
+        <ScrollArea className="w-full">
+          <div className="relative">
+            {/* Cards container */}
+            <div className="flex gap-6 px-8">
+              <div className="flex space-x-6 animate-scroll">
+                {events.map((event, index) => (
+                  <div key={index} className="transform transition-all duration-300 hover:scale-105">
+                    <EventCard {...event} />
                   </div>
+                ))}
+              </div>
+            </div>
           </div>
-          <ScrollBar orientation="horizontal" />
+          <ScrollBar orientation="horizontal" className="z-20" />
         </ScrollArea>
       </div>
     </section>
