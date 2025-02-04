@@ -26,13 +26,15 @@ const events = [
     mainImage: "/placeholder-logo.png",
     secondaryImage: "/placeholder-logo.png",
     date: "12 June 2023",
+    isDark: true
   },
 ]
 
+// FILE: events.tsx
 export const Events = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="container mx-auto px-0 md:px-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Upcoming Events</h2>
         <ScrollArea className="w-full">
           <div className="relative">
@@ -40,7 +42,7 @@ export const Events = () => {
             <div className="flex gap-6 px-8">
               <div className="flex space-x-6 animate-scroll">
                 {events.map((event, index) => (
-                  <div key={index} className="transform transition-all duration-300 hover:scale-105">
+                  <div key={index}>
                     <EventCard {...event} />
                   </div>
                 ))}
