@@ -13,26 +13,29 @@ import { Meet } from "@/components/meet"
 import { Socials } from "@/components/socials"
 import { Footer } from "@/components/footer"
 import { CTA } from "@/components/cta"
+import { Sections } from "@/components/section";
 
 export default function Home() {
 
   return (
     <main className="min-h-screen text-black"> 
       <Navbar />
-      <div className="bg-gradient-to-b from-[#c074f4] via-white to-[#70c4ec]">
+      <div className="bg-gradient-to-b from-[#8335ea] via-white to-[#70c4ec]">
       <Hero />
 
       <Events />
 
-      <Stats />
-
       <Ticker />
+
+      <Stats />
 
       <WhatIs />
 
       <Attended />
 
-      <Topics />
+      {/* <Topics /> */}
+
+      <Sections />
 
       <Feature />
 
