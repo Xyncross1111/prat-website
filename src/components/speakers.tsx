@@ -5,7 +5,7 @@ import { SpeakerCard } from "@/components/speaker-card"
 export const Speakers = () => {
 
     return (// bg-gradient-to-b from-black to-purple-900/20
-        <section className="py-24 ">
+        <section className="py-12 md:py-24 ">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
             THE BEST <span className="text-gradient">SPEAKERS</span>
@@ -32,11 +32,11 @@ export const Speakers = () => {
               </div>
               <ScrollBar orientation="horizontal" />
             </ScrollArea>
-            <div className="flex justify-center mt-12">
+            {/* <div className="flex justify-center mt-12">
               <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 transition-colors">
                 MORE SPEAKERS
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
