@@ -2,7 +2,7 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Events } from "@/components/events"
 import { Stats } from "@/components/statistic"
-import { Ticker } from "@/components/ticker"
+import { Ticker, TickerSponsor } from "@/components/ticker"
 import { WhatIs } from "@/components/whatIs"
 import { Attended } from "@/components/attended"
 import { Topics } from "@/components/topics"
@@ -30,6 +30,8 @@ export default function Home() {
       <Stats />
 
       <WhatIs />
+
+      <TickerSponsor />
 
       <Attended />
 
