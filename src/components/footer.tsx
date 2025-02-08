@@ -61,7 +61,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Links
           {Object.entries(quickLinks).map(([title, links]) => (
             <div key={title}>
               <h3 className="font-bold mb-4">{title}</h3>
@@ -75,7 +75,7 @@ export function Footer() {
                 ))}
               </ul>
             </div>
-          ))}
+          ))} */}
         </div>
 
         {/* Logo and Copyright */}

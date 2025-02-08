@@ -14,7 +14,7 @@ export const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30" />
             </div>
             <div className="relative z-10 max-w-4xl">
-                <h1 className="text-6xl md:text-8xl font-extrabold leading-tight mb-6 animate-float">
+                <h1 className="text-5xl md:text-8xl leading-tight mb-6 animate-float">
                     THE
                     <br />
                     <span className="text-gradient">CREATOR</span>
@@ -23,12 +23,12 @@ export const Hero = () => {
                 </h1>
                 <p className="text-xl text-gray-300 mb-8">Nas summit is for crazy people who create something from nothing</p>
                 <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg rounded-full transition-colors">
-                    Join the Movement
+                    Linktree
                 </Button>
                 <div className="absolute top-0 right-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full p-4 animate-pulse">
-                    BECOME A
+                    Register
                     <br />
-                    PARTNER
+                    Now
                 </div>
             </div>
         </section>

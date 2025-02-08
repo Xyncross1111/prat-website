@@ -8,7 +8,7 @@ export const Navbar = () => {
     const toggleMenu = () => setIsOpen(prev => !prev);
 
     return (
-        <nav className="flex justify-between items-center py-2 px-4 md:py-3 md:px-8 bg-black/50 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
+        <nav className="flex justify-between items-center py-3 px-4 md:py-3 md:px-8 bg-black/50 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
             <div className="text-2xl font-bold text-gradient">PRATISHRUTI.</div>
             {/* Desktop menu */}
             <div className="hidden md:flex gap-6">

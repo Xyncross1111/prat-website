@@ -3,11 +3,9 @@ import { SocialPost } from "@/components/social-post"
 export const Socials = () => {
 
     return (
-        <section className="py-24 bg-black">
+        <section className="py-12 md:py-24 bg-black">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-            EMBEDDED SOCIAL
-            <br />
             <span className="text-gradient">MEDIA WIDGET</span>
           </h2>
 

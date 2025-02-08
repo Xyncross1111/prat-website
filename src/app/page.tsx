@@ -31,7 +31,7 @@ export default function Home() {
 
       <WhatIs />
 
-      <TickerSponsor />
+      {/* <TickerSponsor /> */}
 
       <Attended />
 
@@ -39,7 +39,7 @@ export default function Home() {
 
       <Sections />
 
-      <Feature />
+      {/* <Feature /> */}
 
       <Speakers />
 

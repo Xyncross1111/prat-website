@@ -5,7 +5,7 @@ import { PlayButton } from "@/components/play-button";
 export const Recap = () => {
 
     return (
-        <section className="py-24">
+        <section className="py-12 md:py-24">
         <div className="container mx-auto px-6 md:px-12">
           <div className="relative max-w-6xl mx-auto">
             <div className="relative aspect-video rounded-3xl overflow-hidden">
@@ -37,7 +37,7 @@ export const Recap = () => {
                 <div className="w-3 h-3 rounded-full bg-white/30" />
               </div>
             </div>
-            <div className="flex gap-6 mt-8">
+            {/* <div className="flex gap-6 mt-8">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="relative w-1/3 aspect-video rounded-2xl overflow-hidden">
                   <Image
@@ -56,7 +56,7 @@ export const Recap = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

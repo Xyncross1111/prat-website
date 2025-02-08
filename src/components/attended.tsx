@@ -6,7 +6,7 @@ export const Attended = () => {
         <section className="py-12 ">
         <div className="container mx-auto px-6 md:px-12">
           <h3 className="text-3xl font-bold mb-12 text-center">ATTENDED COMPANIES</h3>
-          <div className="flex flex-wrap gap-8 items-center justify-center">
+          <div className=" marquee flex flex-wrap gap-8 items-center justify-center">
             {Array(5)
               .fill(0)
               .map((_, i) => (
