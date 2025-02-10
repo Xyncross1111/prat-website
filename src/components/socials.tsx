@@ -12,6 +12,8 @@ export const Socials = () => {
       data-height="1000"
       data-dnt="true"
       data-theme="dark"
+      data-chrome="nofooter"
+      data-tweet-limit="5"
       href="https://twitter.com/Rbu_Src">Tweets by Rbu_Src</a>
             <script async src="https://platform.twitter.com/widgets.js"></script>
 

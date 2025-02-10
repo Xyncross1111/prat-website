@@ -17,10 +17,10 @@ export function Footer() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-              SPONSOR A<br />
-              NAS SUMMIT
+              Tweet<br />
+              AT
               <br />
-              NEAR YOU
+              US
             </h2>
             <Button className="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold transition-colors">
               GET IN TOUCH
@@ -80,10 +80,10 @@ export function Footer() {
 
         {/* Logo and Copyright */}
         <div className="pt-8 border-t border-gray-800">
-          <div className="text-gradient text-4xl font-bold mb-4">
-            <Image src="/assets/image/logo.svg" width={125} height={40} alt="logo" />
+          <div className="relative w-full h-16 mb-4">
+            <Image className="object-contain" src="/assets/image/logo.svg" fill alt="logo" />
           </div>
-          <p className="text-sm text-gray-400">Copyright © 2024 Nas Summit. All Rights Reserved.</p>
+          <p className="text-sm text-gray-400">Copyright © 2024 Pratishruti. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { EventCard } from "./ui/event-card";
 
 const events = [
@@ -31,13 +31,16 @@ const events = [
 ];
 
 export const Events = () => {
-  // duplicate the events array
-  const loopedEvents = [...events, ...events];
+  // Duplicate the events array twice for a continuous looping effect.
+  const repeatCount = 2; // Duplicated twice for a seamless scroll
+  const loopedEvents = Array.from({ length: repeatCount }, () => events).flat();
 
   return (
     <section className="py-12 md:py-24 relative overflow-hidden">
       <div className="container mx-auto px-0 md:px-12">
-        <h2 className="px-4 text-4xl md:text-5xl font-bold mb-12 text-center">Upcoming Events</h2>
+        <h2 className="px-4 text-4xl md:text-5xl font-bold mb-12 text-center">
+          Upcoming Events
+        </h2>
         <ScrollArea className="w-full">
           <div className="relative">
             {/* Cards container */}
@@ -55,5 +58,5 @@ export const Events = () => {
         </ScrollArea>
       </div>
     </section>
-  )
-}
+  );
+};
