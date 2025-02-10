@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className="min-h-screen text-black"> 
       <Navbar />
-      <div className="bg-gradient-to-b from-[#8335ea] via-white to-[#70c4ec]">
+      <div className="bg-gradient-to-b from-[#984ca4] via-[#f04c3c] to-[#a0ccfc]">
       <Hero />
 
       <Events />
@@ -44,11 +44,12 @@ export default function Home() {
       <Speakers />
 
       <Recap />
+      <Socials />
+
       </div>
 
       {/* <Meet /> */}
 
-      <Socials />
 
       {/* <CTA /> */}
 

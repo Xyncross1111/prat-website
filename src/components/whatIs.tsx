@@ -3,11 +3,11 @@ export const WhatIs = () => {
     return (
       <section className="py-6 md:py-12 text-black">
         <div className="container mx-auto px-6 md:px-12">
-          <h2 className="text-5xl md:text-6xl font-bold mb-12 text-center">
+          <h3 className="text-4xl md:text-6xl font-bold mb-12 text-center align-left">
             WHAT IS
             <br />
-            <span className="text-gradient">NAS SUMMIT?</span>
-          </h2>
+            <span className=" text-white">Pratishruti?</span>
+          </h3>
           <div className="max-w-3xl mx-auto space-y-6 text-black text-lg leading-relaxed">
             <p>
               Nas Summit is a global gathering of creators and entrepreneurs. It is the ultimate place to find your

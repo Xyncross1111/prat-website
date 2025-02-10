@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,9 @@ export const Navbar = () => {
 
     return (
         <nav className="flex justify-between items-center py-3 px-4 md:py-3 md:px-8 bg-black/50 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
-            <div className="text-2xl font-bold text-gradient">PRATISHRUTI.</div>
+            <div className="text-2xl font-bold text-gradient">
+                <Image src="/assets/image/logo.svg" width={125} height={40} alt="logo" />
+            </div>
             {/* Desktop menu */}
             <div className="hidden md:flex gap-6">
                 <Button variant="ghost" className="text-white hover:text-purple-400 transition-colors">

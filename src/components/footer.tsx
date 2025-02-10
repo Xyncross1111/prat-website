@@ -11,7 +11,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-black text-white">
+    <footer className="py-12 bg-black text-white">
       {/* Sponsor Banner */}
       <div className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-pink-600 p-8 md:p-12 rounded-3xl mx-6 md:mx-12 mb-12">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
@@ -80,7 +80,9 @@ export function Footer() {
 
         {/* Logo and Copyright */}
         <div className="pt-8 border-t border-gray-800">
-          <div className="text-gradient text-4xl font-bold mb-4">PRATISHRUTI</div>
+          <div className="text-gradient text-4xl font-bold mb-4">
+            <Image src="/assets/image/logo.svg" width={125} height={40} alt="logo" />
+          </div>
           <p className="text-sm text-gray-400">Copyright © 2024 Nas Summit. All Rights Reserved.</p>
         </div>
       </div>

@@ -8,7 +8,7 @@ export const Speakers = () => {
     <section className="py-12 md:py-24 w-full relative overflow-hidden">
       <div className="px-6 md:px-12 w-full">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          <span className="text-gradient">Artists</span>
+          <span className="text-black">Artists</span>
           <br />
         </h2>
         {/* Full width speaker container */}

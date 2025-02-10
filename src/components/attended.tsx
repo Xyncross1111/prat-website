@@ -1,24 +1,55 @@
 import Image from "next/image";
 
+const sponsors = [
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png",
+  "/placeholder-logo.png"
+]
+
 export const Attended = () => {
 
-    return ( // bg-gradient-to-b from-black to-purple-900/20
-        <section className="py-12 ">
-        <div className="container mx-auto px-6 md:px-12">
-          <h3 className="text-3xl font-bold mb-12 text-center">ATTENDED COMPANIES</h3>
-          <div className=" marquee flex flex-wrap gap-8 items-center justify-center">
-            {Array(5)
-              .fill(0)
-              .map((_, i) => (
-                <div
-                  key={i}
-                  className="w-24 h-24 bg-zinc-900/50 backdrop-blur-md rounded-full flex items-center justify-center transition-all duration-300 hover:bg-zinc-800/50 hover:shadow-lg hover:shadow-purple-500/20"
-                >
-                  <Image src="/placeholder-logo.png" alt="Company logo" width={48} height={48} className="opacity-50" />
+  // return ( 
+    return (
+      //  bg-gradient-to-b from-black to-purple-900/20
+              <section className="py-12 ">
+              <h3 className="text-3xl font-bold mb-12 text-center">Our Sponsors</h3>
+      
+              <div className="overflow-hidden py-3 md:py-6 bg-black">
+                <div className="animate-marquee whitespace-nowrap">
+                  {
+                    sponsors.map( (sponsor, i) => {
+                      return (<span key={i} className="mx-4 text-lg font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{sponsor}</span>
+                      )
+                    })
+                  }
                 </div>
-              ))}
-          </div>
-        </div>
-      </section>
-    )
+              </div>
+            </section>
+          )
+ // )
 }
+
+
+//     return ( // bg-gradient-to-b from-black to-purple-900/20
+//         <section className="py-12 ">
+//         <h3 className="text-3xl font-bold mb-12 text-center">ATTENDED COMPANIES</h3>
+
+//         <div className="overflow-hidden py-3 md:py-6 bg-black">
+//           <div className="animate-marquee whitespace-nowrap">
+//             {
+//               sponsors.map( (sponsor, i) => {
+//                 return (<span key={i} className="mx-4 text-lg font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{sponsor}</span>
+//                 )
+//               })
+//             }
+//           </div>
+//         </div>
+//       </section>
+//     )

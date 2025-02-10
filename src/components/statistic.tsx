@@ -23,16 +23,14 @@ export const Stats = () => {
         <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
           WORLDS TOP
           <br />
-          <span className="text-gradient">CREATORS GATHERING</span>
+          <span className="text-white">CREATORS GATHERING</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {[
-            { number: "120+", label: "SPEAKERS" },
-            { number: "40+", label: "TRAFFIC SOURCES" },
-            { number: "160+", label: "ADVERTISERS" },
-            { number: "170+", label: "AFFILIATE NETWORKS" },
-            { number: "16,209+", label: "ATTENDEES" },
-            { number: "10+", label: "CITIES" },
+            { number: "27+", label: "EVENTS" },
+            { number: "4+", label: "DAYS" },
+            { number: "30+", label: "SPONSORS" },
+            { number: "15000+", label: "ATTENDEES" },
           ].map((stat, index) => (
             <div
               key={index}
