@@ -3,39 +3,45 @@ import { ArrowRight } from "lucide-react"
 import "@/components/ui/starburst.css"
 
 interface EventCardProps {
-  city: string
-  country: string
+  eventname: string
   venue: string
-  mainImage: string
-  secondaryImage: string
+  imgPath: string
+  absImgPath: string
   date: string
   isDark?: boolean
+  googleFormLink: string
 }
 
-export function EventCard({ city, country, venue, mainImage, secondaryImage, date, isDark = false }: EventCardProps) {
+// time:
+// registrationDeadline: 
+// eventDetails: 
+// imgPathDeleteHash: 
+// absImgPathDeleteHash: 
+
+export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark = true, googleFormLink }: EventCardProps) {
   return (
     <div
-      className={`relative rounded-3xl overflow-hidden p-6 min-w-[400px] ${
+      className={`relative rounded-3xl overflow-hidden p-6 min-w-[400px] min-h-[450px] max-h-[500px] ${
         isDark ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
       <div className="absolute top-6 right-6 text-sm text-gray-500">{date}</div>
 
       <div className="space-y-2 mb-4">
-        <h2 className="text-3xl font-bold tracking-tight">
-          {city}
+        <h2 className="text-2xl font-bold tracking-tight">
+          {eventname}
           <br />
-          {country}
+          {/*country*/}
         </h2>
         <p className="text-gray-500">{venue}</p>
       </div>
 
       <div className="relative">
         <div className="relative h-48 rounded-xl overflow-hidden mb-2">
-          <Image src={mainImage || "/placeholder.svg"} alt={venue} fill className="object-cover" />
+          <Image src={imgPath || "/placeholder.svg"} alt={venue} fill className="object-cover" />
         </div>
         <div className="relative h-32 w-40 rounded-xl overflow-hidden -mt-12 ml-4 transform -rotate-6 shadow-lg">
-          <Image src={secondaryImage || "/placeholder.svg"} alt={`${venue} detail`} fill className="object-cover" />
+          <Image src={absImgPath || "/placeholder.svg"} alt={`${venue} detail`} fill className="object-cover" />
         </div>
 
         <div className="absolute top-4 right-4">
@@ -51,7 +57,7 @@ export function EventCard({ city, country, venue, mainImage, secondaryImage, dat
             isDark ? "bg-white/20 hover:bg-white/30" : "bg-black/10 hover:bg-black/20"
           } transition-colors duration-200`}
         >
-          <span>BOOK NOW</span>
+          <span><a href={googleFormLink}>BOOK NOW</a></span>
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>

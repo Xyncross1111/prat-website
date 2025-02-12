@@ -1,5 +1,8 @@
+"use client";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { EventCard } from "./ui/event-card";
+import { useEffect, useState } from "react";
+import { set } from "react-hook-form";
 
 const events = [
   {
@@ -32,6 +35,23 @@ const events = [
 
 export const Events = () => {
   // Duplicate the events array twice for a continuous looping effect.
+
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+
+    const getEvents = async () => {
+
+      const response = await fetch("api/getEvents");
+      const data = await response.json();
+
+      setEvents(data);
+    }
+
+    getEvents();
+  }, []);
+
+
   const repeatCount = 2; // Duplicated twice for a seamless scroll
   const loopedEvents = Array.from({ length: repeatCount }, () => events).flat();
 
