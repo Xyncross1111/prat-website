@@ -16,6 +16,7 @@ export const Socials = () => {
       data-tweet-limit="5"
       href="https://twitter.com/Rbu_Src">Tweets by Rbu_Src</a>
             <script async src="https://platform.twitter.com/widgets.js"></script>
+      {/* <a className="twitter-timeline" href="https://twitter.com/Rbu_Src?ref_src=twsrc%5Etfw">Tweets by Rbu_Src</a> <script async src="https://platform.twitter.com/widgets.js"></script> */}
 
       </div>
     </>

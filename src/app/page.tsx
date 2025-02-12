@@ -14,39 +14,54 @@ import { Socials } from "@/components/socials"
 import { Footer } from "@/components/footer"
 import { CTA } from "@/components/cta"
 import { Sections } from "@/components/section";
+import Image from "next/image";
 
+// bg-gradient-to-b from-[#984ca4] via-[#f04c3c] to-[#a0ccfc]
 export default function Home() {
 
   return (
-    <main className="min-h-screen text-black"> 
-      <Navbar />
-      <div className="bg-gradient-to-b from-[#984ca4] via-[#f04c3c] to-[#a0ccfc]">
-      <Hero />
+    <main className="min-h-screen relative text-black">
+      <div className="fixed inset-0 -z-10 opacity-20">
+        <Image
+          src="/assets/image/background.png"
+          fill
+          alt="Background"
+          className="object-cover"
+        />
+      </div>
+      {/* className="bg-gradient-to-b from-[#984ca4] via-[#f04c3c] to-[#a0ccfc] */}
 
-      <Events />
+      <div>
+      <div className="bg-gradient-to-b from-[#984ca4] via-[#f04c3c] to-[#a0ccfc] fixed inset-0 -z-20" ></div>
+        <Navbar />
 
-      <Ticker />
+        <Hero />
 
-      <Stats />
+        <Events />
 
-      <WhatIs />
+        <Ticker />
 
-      {/* <TickerSponsor /> */}
+        <Stats />
 
-      <Attended />
+        <WhatIs />
 
-      {/* <Topics /> */}
+        {/* <TickerSponsor /> */}
 
-      <Sections />
+        <Attended />
 
-      {/* <Feature /> */}
+        {/* <Topics /> */}
 
-      <Speakers />
+        <Sections />
 
-      <Recap />
-      <Socials />
+        {/* <Feature /> */}
+
+        <Speakers />
+
+        <Recap />
+        <Socials />
 
       </div>
+
 
       {/* <Meet /> */}
 

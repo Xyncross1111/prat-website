@@ -6,7 +6,7 @@ export const Stats = () => {
   const AnimatedNumber = ({ number, className = '' }: { number: string; className?: string }) => {
     return (
       <motion.h3
-        className={`${className} text-4xl md:text-5xl font-bold text-gradient mb-2`}
+        className={`${className} text-4xl md:text-5xl font-bold text-white mb-2`}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60% 0px -40% 0px" }} // detection point at the middle of the viewport
