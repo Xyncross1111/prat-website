@@ -105,9 +105,9 @@ h1, h2 {
 
 .animate-scroll {
   animation: scroll 40s linear infinite;
-  &:hover {
+  /* &:hover {
     animation-play-state: paused;
-  }
+  } */
 }
 
 /* Optional: Add smooth transition when hovering over cards */
