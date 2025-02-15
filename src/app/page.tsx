@@ -20,16 +20,18 @@ export default function Page() {
   }, [opacity]);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="relative min-h-screen bg-black">
+      {/* Render PageContent in the background */}
+      <div className={`absolute inset-0 ${showLanding ? "opacity-0" : "opacity-100"}`}>
+        <PageContent />
+      </div>
+
+      {/* Render Landing page on top */}
       <AnimatePresence mode="wait">
-        {showLanding ? (
-          <Landing
-            onInteraction={handleInteraction}
-            shakeKey={shakeKey}
-            opacity={opacity}
-          />
-        ) : (
-          <PageContent />
+        {showLanding && (
+          <div className="absolute inset-0 z-10">
+            <Landing onInteraction={handleInteraction} shakeKey={shakeKey} opacity={opacity} />
+          </div>
         )}
       </AnimatePresence>
     </div>
