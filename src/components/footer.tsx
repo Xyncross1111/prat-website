@@ -1,14 +1,9 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import { Twitter, Instagram, Youtube, Linkedin, MessageSquareMore } from "lucide-react"
 
 export function Footer() {
-  const quickLinks = {
-    "QUICK LINKS": ["ABOUT", "APPLY", "SPONSOR", "CONTACT"],
-    Cities: ["JAKARTA", "TEL AVIV", "BANGKOK", "SINGAPORE"],
-    More: ["BANGALORE", "MONGOLIA", "TEL AVIV"],
-  }
 
   return (
     <footer className="py-12 bg-black text-white">
@@ -40,21 +35,27 @@ export function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="font-bold mb-4">Contact Us</h3>
-            <p>hello@PRATISHRUTI.com</p>
-            <p>+971 4261100</p>
-            <div className="flex gap-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
+            <p>rcoem.src@rknec.edu</p>
+            <p>+91 8799872920</p>
+            <p>Message Us
+              <Link href="https://api.whatsapp.com/send?phone=918799872920" className="text-gray-400 hover:text-white transition-colors">
+                <MessageSquareMore className="w-5 h-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+            </p>
+            <div className="flex gap-4">
+              <Link href="https://www.linkedin.com/company/rbusrc" className="text-gray-400 hover:text-white transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </Link>
+              <Link href="https://x.com/rbu_src" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.instagram.com/rbu.src" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.youtube.com/@rcoemsrc" className="text-gray-400 hover:text-white transition-colors">
                 <Youtube className="w-5 h-5" />
               </Link>
+
             </div>
           </div>
 
@@ -77,10 +78,10 @@ export function Footer() {
 
         {/* Logo and Copyright */}
         <div className="pt-8 border-t border-gray-800">
-          <div className="relative w-full h-16 mb-4">
+          <div className="relative w-full h-20 mb-4">
             <Image className="object-contain" src="/assets/image/logo.svg" fill alt="logo" />
           </div>
-          <p className="text-sm text-gray-400">Copyright © 2024 Pratishruti. All Rights Reserved.</p>
+          <p className="text-sm text-center text-gray-400">Copyright © 2024 Pratishruti. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

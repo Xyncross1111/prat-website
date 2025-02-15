@@ -6,7 +6,7 @@ export function Sponsors() {
     return (
         <div className="bg-black w-full py-12 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">NAS SUMMIT WAS ATTENDED BY</h2>
+                <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">OUR SPONSORS</h2>
 
                 <div className="relative">
                     {/* First Row */}

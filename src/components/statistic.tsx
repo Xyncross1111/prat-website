@@ -6,7 +6,7 @@ export const Stats = () => {
   const AnimatedNumber = ({ number, className = '' }: { number: string; className?: string }) => {
     return (
       <motion.h3
-        className={`${className} text-4xl md:text-5xl font-bold text-[#954ba4] mb-2`}
+        className={`${className} text-4xl md:text-5xl font-bold text-[#954ba4] mb-2 hover:text-white`}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60% 0px -40% 0px" }} // detection point at the middle of the viewport
@@ -34,7 +34,7 @@ export const Stats = () => {
           ].map((stat, index) => (
             <div
               key={index}
-              className="bg-[#f5f5f5] backdrop-blur-md p-6 rounded-3xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:bg-zinc-800/50 hover:shadow-lg hover:shadow-purple-500/20"
+              className="bg-[#f5f5f5] backdrop-blur-md p-6 rounded-3xl flex flex-col items-center justify-center text-center transition-all duration-300 hover:bg-zinc-800/50 hover:shadow-lg hover:text-white"
             >
               <AnimatedNumber number={stat.number} />
               <p className="text-sm text-red-600 uppercase tracking-wider">{stat.label}</p>
