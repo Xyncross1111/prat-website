@@ -17,12 +17,9 @@ export function Footer() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-              Tweet<br />
-              AT
-              <br />
-              US
+              Easter Eggs Coming Soon!
             </h2>
-            <Button className="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold transition-colors">
+            {/* <Button className="bg-cyan-400 hover:bg-cyan-500 text-black font-semibold transition-colors">
               GET IN TOUCH
             </Button>
           </div>
@@ -32,7 +29,7 @@ export function Footer() {
               alt="Sponsor illustration"
               fill
               className="object-cover"
-            />
+            /> */}
           </div>
         </div>
       </div>

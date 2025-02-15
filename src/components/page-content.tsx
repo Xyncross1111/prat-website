@@ -38,7 +38,7 @@ export function PageContent() {
     >
       <div className="fixed inset-0 -z-10 opacity-10">
         <Image
-          src="/assets/image/background.png"
+          src="/assets/image/background.svg"
           fill
           alt="Background"
           className="object-cover"
