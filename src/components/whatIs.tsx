@@ -8,7 +8,7 @@ export const WhatIs = () => {
             <br />
             <span className=" text-white">Pratishruti?</span>
           </h3>
-          <div className="max-w-3xl mx-auto space-y-6 text-black text-lg leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-6 text-black font-medium text-lg leading-relaxed text-justify">
             <p>
               Nas Summit is a global gathering of creators and entrepreneurs. It is the ultimate place to find your
               passion, your next partner, a brand deal, or at least 10 friends. Experts will take the stage and present

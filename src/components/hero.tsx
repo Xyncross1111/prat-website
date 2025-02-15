@@ -14,7 +14,7 @@ export const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30" />
             </div>
             <div className="relative z-10 max-w-4xl">
-                <h1 className="text-5xl md:text-8xl leading-tight mb-6 animate-float">
+                <h1 className="text-7xl md:text-8xl leading-tight mb-6 animate-float">
                     Full
                     <br />
                     <span className="text-gradient">Power</span>

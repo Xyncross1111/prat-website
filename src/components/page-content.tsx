@@ -35,7 +35,7 @@ export function PageContent() {
         ease: [0.76, 0, 0.24, 1],
       }}
     >
-      <div className="fixed inset-0 -z-10 opacity-20">
+      <div className="fixed inset-0 -z-10 opacity-10">
         <Image
           src="/assets/image/background.png"
           fill
