@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @font-face {
   font-family: "Greater Theory";
-  src: url("/font/greatertheory.otf") format("opentype");
+  src: url("/fonts/greatertheory.otf") format("opentype");
   font-weight: 400;
 }
 

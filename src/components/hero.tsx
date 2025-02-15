@@ -6,7 +6,7 @@ export const Hero = () => {
         <section className="relative min-h-screen flex items-center px-6 md:px-12 pt-24">
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/assets/image/hero.jpg"
+                    src="/assets/image/hero.webp"
                     alt="Creator gathering crowd"
                     fill
                     className="object-cover"
