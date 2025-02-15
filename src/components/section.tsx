@@ -4,7 +4,7 @@ export function Sections() {
     return (
         <div className="w-full max-w-[1400px] mx-auto px-6 py-12 space-y-6">
             <h2 className="text-black text-4xl md:text-5xl font-bold mb-12 text-center">
-                EXPLORE OUR <span className="text-black">TOPICS</span>
+                P&apos;25 <span className="text-black">TRENDS</span>
             </h2>
             <SectionCard
                 title="CONTENT CREATION"

@@ -31,35 +31,35 @@ h1, h2, h3 {
 h1, h2 {
   color: white;
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-100% - 3rem));
   }
 }
 
-
-@keyframes marqueeReverse {
+@keyframes marquee2 {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(calc(100% + 3rem));
   }
 }
 
-
 .animate-marquee {
-  animation: marquee 20s linear infinite;
-  display: inline-block;
+  animation: marquee 15s linear infinite;
+  /* display: inline-block; */
 }
 
-.animate-marqueeReverse {
-  animation: marqueeReverse 20s linear infinite;
+.animate-marquee2 {
+  animation: marquee2 15s linear infinite;
   
 }
+
 
 @keyframes float {
   0% {

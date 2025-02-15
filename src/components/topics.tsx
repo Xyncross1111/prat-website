@@ -6,7 +6,7 @@ export const Topics = () => {
         <section className="py-24 ">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            EXPLORE OUR <span className="text-white">TOPICS</span>
+            #P&apos;25 <span className="text-white">Trends</span>
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
             <TopicCard

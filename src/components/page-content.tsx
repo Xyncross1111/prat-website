@@ -14,6 +14,7 @@ import { Recap } from "@/components/recap";
 import { Socials } from "@/components/socials";
 import { Footer } from "@/components/footer";
 import { Sections } from "@/components/section";
+import { Sponsors } from "@/components/sponsors";
 
 export function PageContent() {
   return (
@@ -45,14 +46,15 @@ export function PageContent() {
       </div>
 
       <div>
-        <div className="bg-gradient-to-b from-[#984ca4] via-[#f04c3c] to-[#a0ccfc] fixed inset-0 -z-20" />
+        <div className="bg-gradient-to-b from-[#c662d6] via-[#e83625] to-[#3d6cfa] fixed inset-0 -z-20" />
         <Navbar />
         <Hero />
         <Events />
         <Ticker />
         <Stats />
         <WhatIs />
-        <Attended />
+        {/* <Attended /> */}
+        <Sponsors />
         <Sections />
         <Speakers />
         <Recap />

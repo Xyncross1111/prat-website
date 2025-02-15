@@ -1,7 +1,7 @@
 export const WhatIs = () => {
 
     return (
-      <section className="py-6 md:py-12 text-black">
+      <section className="py-6 pb-12 md:py-12 text-black">
         <div className="container mx-auto px-6 md:px-12">
           <h3 className="text-4xl md:text-6xl font-bold mb-12 text-left">
             WHAT IS
