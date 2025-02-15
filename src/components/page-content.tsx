@@ -47,7 +47,7 @@ export function PageContent() {
 
       <div>
         <div className="bg-gradient-to-b from-[#c662d6] via-[#e83625] to-[#3d6cfa] fixed inset-0 -z-20" />
-        <Navbar />
+        <Navbar short={false} />
         <Hero />
         <Events />
         <Ticker />
