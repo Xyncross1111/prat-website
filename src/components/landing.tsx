@@ -63,9 +63,9 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
             </motion.div>
             <motion.button
                 className="px-8 py-3 text-white border border-white/20 rounded-full hover:bg-white/10 transition-colors"
-                animate={{ scale: opacity * 2.2 }}
-                whileHover={{ scale: opacity * 1.05 * 2}}
-                whileTap={{ scale: opacity * 0.95 * 2}}
+                // animate={{ scale: opacity * 2.2 }}
+                whileHover={{ scale: 1.05}}
+                whileTap={{ scale: 0.95}}
                 onClick={onInteraction}
             >
                 #FullPowerमें
