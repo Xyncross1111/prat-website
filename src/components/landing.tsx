@@ -17,11 +17,19 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
 
   return (
     <motion.div
-      className="flex flex-col items-center justify-center min-h-screen gap-8"
+      className="flex flex-col items-center justify-center min-h-screen gap-8 relative"
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       key="landing"
     >
+      <Image
+          src="/assets/image/logo.svg"
+          alt="Pratishruti Logo"
+          width={150}
+          height={200}
+          className="select-none fixed"
+          style={{ transform: "translateY(-50px)" }}
+        /> 
       <motion.div
         key={shakeKey}
         animate={shakeAnimation}
@@ -30,13 +38,15 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
         onClick={onInteraction}
         className="cursor-pointer"
       >
+        
         <Image
-          src="/assets/image/logo.svg"
-          alt="Ratzilla Logo"
-          width={300}
-          height={150}
+          src="/assets/image/hands.svg"
+          alt="Hands of Fate"
+          width={468}
+          height={500}
           className="select-none"
         />
+
       </motion.div>
       <motion.button
         className="px-8 py-3 text-white border border-white/20 rounded-full hover:bg-white/10 transition-colors"
