@@ -8,7 +8,7 @@ export const Recap = () => {
           <div className="relative aspect-video rounded-3xl overflow-hidden">
             <iframe
               src="https://www.youtube.com/embed/im3ZhUT0JuQ"
-              title="2023 Recap Video"
+              title="2025 Teaser Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -38,6 +38,10 @@ export const Recap = () => {
           </div> */}
           {/* ...other code... */}
         </div>
+        <h2 className="pt-12 text-3xl md:text-5xl font-bold text-center ">
+          <span className="text-white">OFFICIAL TEASER</span>
+          <br />
+        </h2>
       </div>
     </section>
   );

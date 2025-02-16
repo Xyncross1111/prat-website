@@ -4,15 +4,15 @@ import { SpeakerCard } from "@/components/speaker-card"
 
 const artists = [
   {
-    name: "JORDAN MATTER",
+    name: "AKHIL SACHDEVA",
     title: '"Our" Youtuber in The World',
-    image: "/assets/image/art1.webp",
+    image: "/assets/image/akhil.webp",
     socials: true,
   },
   {
-    name: "Speaker 1",
+    name: "DJ KASHISH RATHORE",
     title: "Influential Creator",
-    image: "/assets/image/art2.jpg",
+    image: "/assets/image/kashish.webp",
     socials: true,
 
   },

@@ -14,10 +14,10 @@ export const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/30" />
             </div>
             <div className="relative z-10 max-w-4xl">
-                <h1 className="text-7xl md:text-8xl leading-tight mb-6 animate-float">
+                <h1 className="text-7xl md:text-8xl leading-tight mb-6 animate-float drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                     Full
                     <br />
-                    <span className="text-gradient">Power</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#c662d6] to-[#e83625]">Power</span>
                     <br />
                     में
                 </h1>
