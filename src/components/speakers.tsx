@@ -1,17 +1,15 @@
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
-import { Button } from "@/components/ui/button"
 import { SpeakerCard } from "@/components/speaker-card"
 
 const artists = [
   {
     name: "AKHIL SACHDEVA",
-    title: '"Our" Youtuber in The World',
+    title: 'Nashaboy',
     image: "/assets/image/akhil.webp",
     socials: true,
   },
   {
     name: "DJ KASHISH RATHORE",
-    title: "Influential Creator",
+    title: "Sunburn On Campus",
     image: "/assets/image/kashish.webp",
     socials: true,
   }
@@ -25,7 +23,7 @@ export const Speakers = () => {
     <section className="py-12 md:py-24 relative overflow-hidden">
       <div className="container mx-auto px-0 md:px-12">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          <span className="text-black">Artists</span>
+          <span className="bg-gradient-to-l from-[#f7cde0] to-[#fefbff] bg-clip-text text-transparent">Artists</span>
           <br />
         </h2>
         {/* <ScrollArea className="w-full">

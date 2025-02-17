@@ -17,6 +17,9 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
@@ -24,12 +27,11 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Greater Theory";
-
+  font-family: "Greater Theory", "Poppins";
 }
 
 h1, h2 {
-  color: white;
+  color: #e0ecff;
 }
 
 @keyframes marquee {

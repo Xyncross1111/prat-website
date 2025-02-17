@@ -36,23 +36,24 @@ export function PageContent() {
         ease: [0.76, 0, 0.24, 1],
       }}
     >
-      <div className="fixed inset-0 -z-10 opacity-15">
+      <div className="fixed inset-0 opacity-30 -z-10 ">
         <Image
-          src="/assets/image/background.jpg"
+          src="/assets/image/bg_test2.jpg"
           fill
           alt="Background"
-          className="object-cover"
+          className="object-cover bg-blend-color-burn"
         />
       </div>
 
       <div>
-        <div className="bg-gradient-to-b from-[#c662d6] via-[#e83625] to-[#3d6cfa] fixed inset-0 -z-20" />
+        <div className="bg-gradient-to-b from-[#773c81] via-[#852016] to-[#253f8e] fixed inset-0 -z-20" />
         <Navbar short={false} />
         <Hero />
         <Events />
         <Ticker />
-        <Stats />
+        
         <WhatIs />
+        <Stats />
         {/* <Attended /> */}
         <Sponsors />
         <Sections />

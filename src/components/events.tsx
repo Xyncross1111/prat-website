@@ -2,36 +2,6 @@
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { EventCard } from "./ui/event-card";
 import { useEffect, useState } from "react";
-import { set } from "react-hook-form";
-
-const events = [
-  {
-    city: "JAKARTA",
-    country: "INDONESIA",
-    venue: "Madinat Jumeirah",
-    mainImage: "/placeholder-logo.png",
-    secondaryImage: "/placeholder-logo.png",
-    date: "12 June 2023",
-    isDark: true,
-  },
-  {
-    city: "LONDON",
-    country: "UK",
-    venue: "Leonardo royal event & tower bridge",
-    mainImage: "/placeholder-logo.png",
-    secondaryImage: "/placeholder-logo.png",
-    date: "12 June 2023",
-  },
-  {
-    city: "NEW YORK",
-    country: "USA",
-    venue: "Hilton Tel NY",
-    mainImage: "/placeholder-logo.png",
-    secondaryImage: "/placeholder-logo.png",
-    date: "12 June 2023",
-    isDark: true,
-  },
-];
 
 export const Events = () => {
   // Duplicate the events array twice for a continuous looping effect.
@@ -41,13 +11,10 @@ export const Events = () => {
   useEffect(() => {
 
     const getEvents = async () => {
-
       const response = await fetch("api/getEvents");
       const data = await response.json();
-
       setEvents(data);
-    }
-
+    };
     getEvents();
   }, []);
 
@@ -56,7 +23,7 @@ export const Events = () => {
   const loopedEvents = Array.from({ length: repeatCount }, () => events).flat();
 
   return (
-    <section className="py-12 md:py-24 relative overflow-hidden">
+    <section id="events" className="py-12 md:py-24 relative overflow-hidden">
       <div className="container mx-auto px-0 md:px-12">
         <h2 className="px-4 text-4xl md:text-5xl font-bold mb-12 text-center">
           Upcoming Events

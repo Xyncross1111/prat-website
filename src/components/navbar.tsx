@@ -35,7 +35,7 @@ export const Navbar: FC<NavbarProps> = ({ short }) => {
                 </Button>
                 </Link>
                 <Button variant="outline" className="bg-white/10 text-white hover:bg-white/20 transition-colors">
-                    BECOME A PARTNER
+                #FullPowerमें
                 </Button>
             </div>
 
@@ -63,18 +63,22 @@ export const Navbar: FC<NavbarProps> = ({ short }) => {
                     HOME
                 </Button>
                 </Link>
+                <Link href="/#events">
                 <Button variant="ghost" className="text-white hover:text-purple-400 transition-colors mb-2">
                     EVENTS
                 </Button>
+                </Link>
                 <Link href="/leaderboard">
                 <Button variant="ghost" className="text-white hover:text-purple-400 transition-colors mb-2">
                     LEADERBOARD
                 </Button>
                 </Link>
-                
-                <Button variant="outline" className="bg-white/10 text-white hover:bg-white/20 transition-colors">
-                    FullPowerमें
+                <Link href="https://www.instagram.com/p/DGLOCJDCVAV/" target="_blank">
+                <Button variant="outline" className="my-2 bg-white/10 text-white hover:bg-white/20 transition-colors">
+                    #FullPowerमें
                 </Button>
+                </Link >
+                
             </div>
         </nav>
     )

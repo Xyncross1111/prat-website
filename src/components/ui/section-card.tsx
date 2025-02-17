@@ -16,7 +16,7 @@ const containerVariants = {
 
 const titleVariants = {
   initial: { color: "#000000" },
-  inView: { color: "#67E8F9", transition: { duration: 0.3 } },
+  inView: { color: "#f7cde0", transition: { duration: 0.3 } },
 }
 
 const descriptionVariants = {
@@ -65,7 +65,7 @@ export function SectionCard({ title, description, image }: SectionCardProps) {
               src={image || "/placeholder.svg"}
               alt=""
               layout="fill"
-              objectFit="contain"
+              objectFit="cover"
               className="rotate-0 md:-rotate-6 transform scale-90 md:scale-110 rounded-[24px]"
             />
           </div>

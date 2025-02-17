@@ -41,10 +41,10 @@ export const Stats = () => {
   return (
     <section className="py-12 md:py-24">
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="text-4xl md:text-6xl font-bold text-center mb-12">
-          PRATISHRUTI IN
+        <h2 className="text-4xl md:text-6xl font-bold text-center mb-12 ">
+          PRATISHRUTI &apos;25
           <br />
-          <span className="text-white">NUMBERS</span>
+          <span className="text-white"> IN NUMBERS</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {stats.map((stat, index) => (

@@ -3,8 +3,8 @@ import { SectionCard } from "@/components/ui/section-card"
 export function Sections() {
     return (
         <div className="w-full max-w-[1400px] mx-auto px-6 py-12 space-y-6">
-            <h2 className="text-black text-4xl md:text-5xl font-bold mb-12 text-center">
-                P&apos;25 <span className="text-black">TRENDS</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#ff945b]">
+                P&apos;25 <span className="text-[#e0ecff]">TRENDS</span>
             </h2>
             <SectionCard
                 title="ARCADIA OF REALMS"
@@ -15,7 +15,7 @@ export function Sections() {
                 title="UNDER 25 SUMMIT"
                 description="Under25 Summit: Where Creators, Hustlers & Dreamers Collide!
                 For the first time ever, Ramdeobaba University hosts the Under25 Summit, India’s ultimate youth festival for creators, entrepreneurs, and trendsetters. Meet top influencers, viral content creators, and industry icons, dive into interactive workshops, and network like never before. Whether you're a storyteller, entertainer, or future mogul, this is where your journey begins!"
-                image="/assets/image/under25_card.svg"
+                image="/assets/image/under25.webp"
             />
             <SectionCard
                 title="SUNBURN CAMPUS"
