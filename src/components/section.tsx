@@ -15,18 +15,18 @@ export function Sections() {
                 title="UNDER 25 SUMMIT"
                 description="Under25 Summit: Where Creators, Hustlers & Dreamers Collide!
                 For the first time ever, Ramdeobaba University hosts the Under25 Summit, India’s ultimate youth festival for creators, entrepreneurs, and trendsetters. Meet top influencers, viral content creators, and industry icons, dive into interactive workshops, and network like never before. Whether you're a storyteller, entertainer, or future mogul, this is where your journey begins!"
-                image="/placeholder-logo.png"
+                image="/assets/image/under25_card.svg"
             />
             <SectionCard
                 title="SUNBURN CAMPUS"
                 description="After five long years, Sunburn Campus is making its grand return to Ramdeobaba University, and it's going to be bigger, louder, and more electrifying than ever! Get ready to groove to the beats of world-class DJs, experience the magic of mesmerizing lights and visuals, and lose yourself in an unforgettable night of music and madness. This is the ultimate celebration of youth, energy, and passion. So mark your calendars, because this is a night you don’t want to miss!
 "
-                image="/placeholder-logo.png"
+                image="/assets/image/sunburn.png"
             />
             <SectionCard
                 title="SPONSOR US"
                 description="Pratishruti is more than just a festival, it's an experience that brings together thousands of students, artists, and influencers from across the region. By partnering with us, your brand gets unparalleled exposure, direct engagement with the youth, and the opportunity to be part of one of the most vibrant cultural celebrations in Nagpur. Whether through event sponsorships, digital promotions, or on-ground branding, we offer customized sponsorship packages to ensure your brand makes a lasting impact. Let’s collaborate and create something extraordinary!"
-                image="/placeholder-logo.png"
+                image="/assets/image/sponsors_card.svg"
             />
         </div>
     )
