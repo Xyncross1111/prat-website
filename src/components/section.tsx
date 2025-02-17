@@ -7,23 +7,25 @@ export function Sections() {
                 P&apos;25 <span className="text-black">TRENDS</span>
             </h2>
             <SectionCard
-                title="CONTENT CREATION"
-                description="Understand Your Audience, Content Strategy, Storytelling, Copywriting, Editing, Shooting, Community Building, Influencer Collaboration, Podcasting Skills, Creativity Techniques, Self Branding, and many more things."
+                title="ARCADIA OF REALMS"
+                description="Step into a mystical utopia where imagination knows no bounds, and every realm unlocks a new dimension of creativity and wonder. From enchanted kingdoms and futuristic worlds to dreamscapes beyond comprehension, the festival will transport you into a universe where fantasy meets reality. This Pratishruti, embrace the extraordinary and journey through realms of fantasy and magic."
                 image="/placeholder-logo.png"
             />
             <SectionCard
-                title="STARTUPS & BRANDS"
-                description="Building a Brand, Scalability, Marketing Strategy, Time Management, Pivot Strategies, Company's Values, Community Building & Collaborations."
+                title="UNDER 25 SUMMIT"
+                description="Under25 Summit: Where Creators, Hustlers & Dreamers Collide!
+                For the first time ever, Ramdeobaba University hosts the Under25 Summit, India’s ultimate youth festival for creators, entrepreneurs, and trendsetters. Meet top influencers, viral content creators, and industry icons, dive into interactive workshops, and network like never before. Whether you're a storyteller, entertainer, or future mogul, this is where your journey begins!"
                 image="/placeholder-logo.png"
             />
             <SectionCard
-                title="TRADITIONAL MEDIA & TV"
-                description="Does Traditional media still exist? We will talk about the future of Radio, TV, Newspapers, and the movies industry."
+                title="SUNBURN CAMPUS"
+                description="After five long years, Sunburn Campus is making its grand return to Ramdeobaba University, and it's going to be bigger, louder, and more electrifying than ever! Get ready to groove to the beats of world-class DJs, experience the magic of mesmerizing lights and visuals, and lose yourself in an unforgettable night of music and madness. This is the ultimate celebration of youth, energy, and passion. So mark your calendars, because this is a night you don’t want to miss!
+"
                 image="/placeholder-logo.png"
             />
             <SectionCard
-                title="NETWORKING & ACTIVATIONS"
-                description="Nas Summit brings the most interesting people together under one roof. This is your chance to network, create your next content piece, and collaborate with other creators. We promise you a fun-filled event and a memorable experience."
+                title="SPONSOR US"
+                description="Pratishruti is more than just a festival, it's an experience that brings together thousands of students, artists, and influencers from across the region. By partnering with us, your brand gets unparalleled exposure, direct engagement with the youth, and the opportunity to be part of one of the most vibrant cultural celebrations in Nagpur. Whether through event sponsorships, digital promotions, or on-ground branding, we offer customized sponsorship packages to ensure your brand makes a lasting impact. Let’s collaborate and create something extraordinary!"
                 image="/placeholder-logo.png"
             />
         </div>
