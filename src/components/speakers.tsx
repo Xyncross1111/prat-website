@@ -14,27 +14,12 @@ const artists = [
     title: "Influential Creator",
     image: "/assets/image/kashish.webp",
     socials: true,
-
-  },
-  {
-    name: "Speaker 2",
-    title: "Influential Creator",
-    image: "/assets/image/art3.jpg",
-    socials: true,
-
-  },
-  {
-    name: "Speaker 3",
-    title: "Influential Creator",
-    image: "/assets/image/art4.jpg",
-    socials: true,
-
   }
 ]
 
 export const Speakers = () => {
 
-  const repeatCount = 2; // Duplicated twice for a seamless scroll
+  const repeatCount = 5; // Duplicated twice for a seamless scroll
   const loopedArtists = Array.from({ length: repeatCount }, () => artists).flat();
   return (
     <section className="py-12 md:py-24 relative overflow-hidden">
@@ -43,9 +28,8 @@ export const Speakers = () => {
           <span className="text-black">Artists</span>
           <br />
         </h2>
-        <ScrollArea className="w-full">
+        {/* <ScrollArea className="w-full">
           <div className="relative">
-            {/* Cards container */}
             <div className="flex gap-6 px-8">
               <div className="flex space-x-6 animate-scroll">
                 {loopedArtists.map((artist, index) => {
@@ -61,7 +45,22 @@ export const Speakers = () => {
             </div>
           </div>
           <ScrollBar orientation="horizontal" className="z-20" />
-        </ScrollArea>
+        </ScrollArea> */}
+          <div className="relative">
+            <div className="flex gap-6 px-8">
+              <div className="flex space-x-6 animate-scroll">
+                {loopedArtists.map((artist, index) => {
+                  return (<SpeakerCard
+                    key={index}
+                    name={artist.name}
+                    title={artist.title}
+                    image={artist.image}
+                    socials={artist.socials}
+                  />)
+                })}
+              </div>
+            </div>
+          </div>
       </div>
     </section>
   )

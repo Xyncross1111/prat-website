@@ -9,7 +9,7 @@ export function Sections() {
             <SectionCard
                 title="ARCADIA OF REALMS"
                 description="Step into a mystical utopia where imagination knows no bounds, and every realm unlocks a new dimension of creativity and wonder. From enchanted kingdoms and futuristic worlds to dreamscapes beyond comprehension, the festival will transport you into a universe where fantasy meets reality. This Pratishruti, embrace the extraordinary and journey through realms of fantasy and magic."
-                image="/placeholder-logo.png"
+                image="/assets/image/arcadia_of_realms.webp"
             />
             <SectionCard
                 title="UNDER 25 SUMMIT"
@@ -21,7 +21,7 @@ export function Sections() {
                 title="SUNBURN CAMPUS"
                 description="After five long years, Sunburn Campus is making its grand return to Ramdeobaba University, and it's going to be bigger, louder, and more electrifying than ever! Get ready to groove to the beats of world-class DJs, experience the magic of mesmerizing lights and visuals, and lose yourself in an unforgettable night of music and madness. This is the ultimate celebration of youth, energy, and passion. So mark your calendars, because this is a night you don’t want to miss!
 "
-                image="/assets/image/sunburn.png"
+                image="/assets/image/sunburn_card.webp"
             />
             <SectionCard
                 title="SPONSOR US"
