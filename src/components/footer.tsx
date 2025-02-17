@@ -94,7 +94,7 @@ export function Footer() {
           <div className="relative w-full h-20 mb-4">
             <Image className="object-contain" src="/assets/image/logo.svg" layout="fill" alt="logo" />
           </div>
-          <p className="text-sm text-center text-gray-400">Copyright © 2024 Pratishruti. All Rights Reserved.</p>
+          <p className="text-sm text-center text-gray-400">Copyright © 2025 Pratishruti. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

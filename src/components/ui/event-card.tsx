@@ -18,7 +18,7 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/assets/image/event_card_bg_test2.jpg')",
+          backgroundImage: "url('/assets/image/event_card_bg.webp')",
         }}
       />
       <div className="relative p-6">
