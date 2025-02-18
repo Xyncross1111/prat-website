@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import "@/app/globals.css";
 import ParticleBackground from "@/components/particle-background";
 import { Navbar } from "@/components/navbar";
@@ -17,6 +18,7 @@ export default function RootLayout({
         <html lang="en">
             {/* className="relative" */}
             <body>
+                <Analytics />
                 <Navbar short={true} />
                 <ParticleBackground />
                 {children}
