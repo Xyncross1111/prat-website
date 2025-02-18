@@ -8,7 +8,6 @@ import { Events } from "@/components/events";
 import { Stats } from "@/components/statistic";
 import { Ticker } from "@/components/ticker";
 import { WhatIs } from "@/components/whatIs";
-import { Attended } from "@/components/attended";
 import { Speakers } from "@/components/speakers";
 import { Recap } from "@/components/recap";
 import { Socials } from "@/components/socials";
@@ -25,14 +24,16 @@ export default function PageContent() {
       animate="animate"
       variants={{
         initial: {
-          clipPath: "inset(0 0 100% 0)",
+          // clipPath: "inset(0 0 100% 0)",
+          opacity: 0,
         },
         animate: {
-          clipPath: "inset(0 0 0% 0)",
+          // clipPath: "inset(0 0 0% 0)",
+          opacity: 1
         },
       }}
       transition={{
-        duration: 1,
+        duration: 0.5,
         ease: [0.76, 0, 0.24, 1],
       }}
     >

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
 import { Landing } from "@/components/landing";
@@ -23,6 +23,10 @@ export default function Page() {
       setShowLanding(false);
     }
   }, [opacity]);
+
+  useEffect(() => {
+    import("@/components/page-content");
+  }, []);
 
   return (
     <div className="relative min-h-screen bg-black">
