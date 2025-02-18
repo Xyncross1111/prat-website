@@ -44,8 +44,7 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
                 width={200 * opacity}
                 height={200}
                 className="select-none fixed"
-                style={{ transform: "translateY(-50px)" }}
-            />
+                style={{ left: "50%", transform: "translate(-50%, -50px)" }}            />
 
             <motion.div
                 key={shakeKey}
