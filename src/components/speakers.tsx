@@ -5,13 +5,15 @@ const artists = [
     name: "AKHIL SACHDEVA",
     title: 'Nashaboy',
     image: "/assets/image/akhil.webp",
-    socials: true,
+    instagram: "https://www.instagram.com/sachdevaakhilnasha",
+    youtube: "https://www.youtube.com/watch?v=se9DDAwwGQY"
   },
   {
     name: "DJ KASHISH RATHORE",
     title: "Sunburn On Campus",
     image: "/assets/image/kashish.webp",
-    socials: true,
+    instagram: "https://www.instagram.com/djkashish_rathore",
+    youtube: "https://www.youtube.com/channel/UC3Y_bDS-9_qYkrpHwNnIuRA"
   }
 ]
 
@@ -53,7 +55,8 @@ export const Speakers = () => {
                     name={artist.name}
                     title={artist.title}
                     image={artist.image}
-                    socials={artist.socials}
+                    instagram={artist.instagram}
+                    youtube={artist.youtube}
                   />)
                 })}
               </div>

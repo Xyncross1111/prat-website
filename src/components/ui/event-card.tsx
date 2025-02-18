@@ -13,12 +13,21 @@ interface EventCardProps {
 }
 
 export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark = true, googleFormLink }: EventCardProps) {
+  
+  const backgrounds = [
+    "/assets/image/event_card_bg1.webp",
+    "/assets/image/event_card_bg2.webp",
+    "/assets/image/event_card_bg3.webp",
+    "/assets/image/event_card_bg4.webp",
+  ]
+  const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)]
+  
   return (
     <div className={`relative rounded-3xl overflow-hidden min-w-[400px] min-h-[450px] max-h-[500px] ${ isDark ? "bg-black text-white" : "bg-white text-black" }`}>
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/assets/image/event_card_bg.webp')",
+          backgroundImage: `url('${randomBackground}')`,
         }}
       />
       <div className="relative p-6">
@@ -53,7 +62,7 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
               isDark ? "bg-white/20 hover:bg-white/30" : "bg-black/10 hover:bg-black/20"
             } transition-colors duration-200`}
           >
-            <span><a href={googleFormLink}>BOOK NOW</a></span>
+            <span><a href={googleFormLink}>Register</a></span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
