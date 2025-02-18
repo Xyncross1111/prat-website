@@ -19,7 +19,7 @@ export const Events = () => {
   }, []);
 
 
-  const repeatCount = 2; // Duplicated twice for a seamless scroll
+  const repeatCount = 5; // Duplicated twice for a seamless scroll
   const loopedEvents = Array.from({ length: repeatCount }, () => events).flat();
 
   return (

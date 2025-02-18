@@ -45,7 +45,7 @@ export function SectionCard({ title, description, image }: SectionCardProps) {
         </div>
         <div className="flex-1">
           <motion.p
-            className="text-base md:text-lg transition-colors duration-300"
+            className="text-base md:text-lg transition-colors duration-300 text-justify"
             variants={descriptionVariants}
           >
             {description}

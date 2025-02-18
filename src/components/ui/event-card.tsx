@@ -46,16 +46,16 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
             <Image src={imgPath || "/placeholder.svg"} alt={venue} fill className="object-cover" />
           </div>
           <div className="relative h-32 w-40 rounded-xl overflow-hidden -mt-12 ml-4 transform -rotate-6 shadow-lg">
-            <Image src={absImgPath || "/placeholder.svg"} alt={`${venue} detail`} fill className="object-cover" />
+            <Image src={absImgPath || "/placeholder.svg"} alt={`${venue} detail`} fill className="object-contain" />
           </div>
 
-          <div className="absolute top-4 right-4">
+          {/* <div className="absolute top-4 right-4">
             <div className="starburst bg-purple-500 text-white text-xs font-bold py-2 px-4 rounded-full">
               NEW
               <br />
               EVENT
             </div>
-          </div>
+          </div> */}
 
           <button
             className={`absolute bottom-0 right-0 flex items-center space-x-2 px-4 py-2 rounded-full ${

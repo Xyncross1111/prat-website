@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 
 interface LandingProps {
@@ -18,6 +18,11 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
 
     const buttonColors = ['#ffffff', '#ffe598', '#ffde52', '#ffa052', '#ff5252', '#ff2121', '#000000'];
     const [colorIndex, setColorIndex] = useState(0);
+    const controls = useAnimation();
+
+    useEffect(() => {
+        controls.start(shakeAnimation);
+    }, [shakeKey, controls]);
 
     const handleButtonClick = () => {
         setColorIndex((prev) => (prev + 1) % buttonColors.length);
@@ -29,8 +34,7 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
             className="relative flex flex-col items-center justify-center min-h-screen gap-8"
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-                style={{ willChange: "transform", backfaceVisibility: "hidden" }}
-
+            style={{ willChange: "transform", backfaceVisibility: "hidden" }}
             key="landing"
         >
             <Image
@@ -46,13 +50,13 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
                 width={200 * opacity}
                 height={200}
                 className="select-none fixed"
-                style={{ left: "50%", top: "45%", transform: "translate(-50%, -50%)" }}            />
+                style={{ left: "50%", top: "45%", transform: "translate(-50%, -50%)" }}
+            />
 
             <motion.div
-                key={shakeKey}
-                animate={shakeAnimation}
+                animate={controls}
                 transition={{ duration: 0.3 }}
-                style={{ opacity }}
+                style={{ opacity, willChange: "transform", backfaceVisibility: "hidden" }}
                 onClick={onInteraction}
                 className="cursor-pointer"
             >

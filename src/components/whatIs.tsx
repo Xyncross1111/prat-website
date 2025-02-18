@@ -14,7 +14,6 @@ export const WhatIs = () => {
           </p>
           <p>
             More than just a festival, Pratishruti is a growing legacy. From mesmerizing concerts to intellectual battles and social initiatives, it embraces diversity in talent and thought. Whether you’re an artist, performer, or storyteller, Pratishruti invites you to be part of something unforgettable.
-            See you there!
           </p>
           <p className="font-semibold">See you there!</p>
         </div>
