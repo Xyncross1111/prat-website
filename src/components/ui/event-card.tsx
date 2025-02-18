@@ -31,7 +31,7 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
         }}
       />
       <div className="relative p-6">
-        <div className="absolute top-6 right-6 text-sm text-gray-500">{date}</div>
+        <div className="absolute top-6 right-6 text-sm text-white">{date}</div>
 
         <div className="space-y-2 mb-4">
           <h2 className="text-2xl font-bold tracking-tight">
