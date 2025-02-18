@@ -29,6 +29,8 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
             className="relative flex flex-col items-center justify-center min-h-screen gap-8"
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
+                style={{ willChange: "transform", backfaceVisibility: "hidden" }}
+
             key="landing"
         >
             <Image
