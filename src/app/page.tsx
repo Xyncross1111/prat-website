@@ -15,6 +15,11 @@ export default function Page() {
   const [showLanding, setShowLanding] = useState(true);
   const [shakeKey, setShakeKey] = useState(0);
 
+  // Preload PageContent early
+  useEffect(() => {
+    import("@/components/page-content");
+  }, []);
+
   const handleInteraction = useCallback(() => {
     setShakeKey((prev) => prev + 1);
     if (opacity < 1) {
@@ -24,18 +29,14 @@ export default function Page() {
     }
   }, [opacity]);
 
-  useEffect(() => {
-    import("@/components/page-content");
-  }, []);
-
   return (
     <div className="relative min-h-screen bg-black">
-      {!showLanding && (
-        <div className="absolute inset-0">
-          <PageContent />
-        </div>
-      )}
+      {/* Always render PageContent in the background, but hide it while Landing is visible */}
+      <div className="absolute inset-0" style={{ display: showLanding ? 'none' : 'block' }}>
+        <PageContent />
+      </div>
 
+      {/* Render Landing on top until it's dismissed */}
       <AnimatePresence mode="wait">
         {showLanding && (
           <div className="absolute inset-0 z-10">

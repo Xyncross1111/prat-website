@@ -42,6 +42,7 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
                 alt="Starry Sky Background"
                 fill
                 className="object-cover opacity-50 bg-repeat-y absolute inset-0 z-[-1]"
+                priority
             />
 
             <Image
@@ -51,6 +52,7 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
                 height={200}
                 className="select-none fixed"
                 style={{ left: "50%", top: "45%", transform: "translate(-50%, -50%)" }}
+                priority
             />
 
             <motion.div
@@ -66,6 +68,7 @@ export function Landing({ onInteraction, shakeKey, opacity }: LandingProps) {
                     width={468}
                     height={500}
                     className="select-none"
+                    priority
                 />
             </motion.div>
             <motion.button
