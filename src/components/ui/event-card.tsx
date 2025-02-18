@@ -38,7 +38,7 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
             {eventname}
             <br />
           </h2>
-          <p className="text-gray-500">{venue}</p>
+          <p className="text-slate-300">{venue}</p>
         </div>
 
         <div className="relative">
@@ -58,8 +58,8 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
           </div> */}
 
           <button
-            className={`absolute bottom-0 right-0 flex items-center space-x-2 px-4 py-2 rounded-full ${
-              isDark ? "bg-white/20 hover:bg-white/30" : "bg-black/10 hover:bg-black/20"
+            className={`text-black absolute bottom-0 right-0 flex items-center space-x-2 px-4 py-2 rounded-full ${
+              isDark ? "bg-white hover:bg-white/70" : "bg-black/10 hover:bg-black/20"
             } transition-colors duration-200`}
           >
             <span><a href={googleFormLink}>Register</a></span>
