@@ -1,9 +1,14 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import dynamic from "next/dynamic";
 import { AnimatePresence } from "framer-motion";
 import { Landing } from "@/components/landing";
-import { PageContent } from "@/components/page-content";
+
+const PageContent = dynamic(() => import("@/components/page-content"), {
+  ssr: false,
+  loading: () => null,
+});
 
 export default function Page() {
   const [opacity, setOpacity] = useState(0.25);
@@ -21,12 +26,12 @@ export default function Page() {
 
   return (
     <div className="relative min-h-screen bg-black">
-      {/* Render PageContent in the background */}
-      <div className={`absolute inset-0 ${showLanding ? "opacity-0" : "opacity-100"}`}>
-        <PageContent />
-      </div>
+      {!showLanding && (
+        <div className="absolute inset-0">
+          <PageContent />
+        </div>
+      )}
 
-      {/* Render Landing page on top */}
       <AnimatePresence mode="wait">
         {showLanding && (
           <div className="absolute inset-0 z-10">

@@ -16,7 +16,7 @@ import { Footer } from "@/components/footer";
 import { Sections } from "@/components/section";
 import { Sponsors } from "@/components/sponsors";
 
-export function PageContent() {
+export default function PageContent() {
   return (
     <motion.main
       key="content"
