@@ -32,10 +32,10 @@ export const Stats = () => {
   }
 
   const stats = [
-    { number: "20+", label: "EVENTS", image: "/assets/image/events_stat.svg" },
-    { number: "4+", label: "DAYS", image: "/assets/image/days_stat.svg" },
-    { number: "20+", label: "SPONSORS", image: "/assets/image/sponsors_stat.svg" },
-    { number: "8000+", label: "ATTENDEES", image: "/assets/image/attendees_stat.svg" },
+    { number: "20+", label: "EVENTS", image: "/assets/image/events_stat.png" },
+    { number: "4+", label: "DAYS", image: "/assets/image/days_stat.png" },
+    { number: "20+", label: "SPONSORS", image: "/assets/image/sponsors_stat.png" },
+    { number: "8000+", label: "ATTENDEES", image: "/assets/image/attendees_stat.png" },
   ];
 
   return (
