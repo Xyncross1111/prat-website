@@ -10,6 +10,7 @@ export function Sponsors() {
         "/assets/image/sponsors/PAREKH_BROTHERS.png",
         "/assets/image/sponsors/WCFL.png",
         "/assets/image/sponsors/222_BACKYARD.png",
+        "/assets/image/sponsors/msquare.png",
     ]
 
     // Duplicate the array for a continuous marquee effect
