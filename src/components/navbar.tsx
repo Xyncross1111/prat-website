@@ -26,7 +26,7 @@ export const Navbar: FC<NavbarProps> = ({ short }) => {
                     />
                 </Link>
 
-            </div>  
+            </div>
             {/* Desktop menu */}
             <div className="hidden md:flex gap-6">
                 <Link href="/">
@@ -34,18 +34,21 @@ export const Navbar: FC<NavbarProps> = ({ short }) => {
                         HOME
                     </Button>
                 </Link>
-
-                <Button variant="ghost" className="text-white hover:text-purple-400 transition-colors">
-                    EVENTS
-                </Button>
+                <Link href="/#events">
+                    <Button variant="ghost" className="text-white hover:text-purple-400 transition-colors">
+                        EVENTS
+                    </Button>
+                </Link>
                 <Link href="/leaderboard">
                     <Button variant="ghost" className="text-white hover:text-purple-400 transition-colors">
                         LEADERBOARD
                     </Button>
                 </Link>
-                <Button variant="outline" className="bg-white/10 text-white hover:bg-white/20 transition-colors">
-                    #FullPowerमें
-                </Button>
+                <Link href="https://www.instagram.com/p/DGLOCJDCVAV/" target="_blank">
+                    <Button variant="outline" className="bg-white/10 text-white hover:bg-white/20 transition-colors">
+                        #FullPowerमें
+                    </Button>
+                </Link>
             </div>
 
             {/* Hamburger Menu */}
