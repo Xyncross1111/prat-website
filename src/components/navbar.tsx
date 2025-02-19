@@ -16,13 +16,17 @@ export const Navbar: FC<NavbarProps> = ({ short }) => {
     return (
         <nav className="flex justify-between items-center py-3 px-4 md:py-3 md:px-8 bg-black/70 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
             <div className="text-2xl font-bold text-gradient">
-                <Image src="/assets/image/logo.svg"
-                    width={short ? 60 : 125}
-                    height={40} alt="logo"
-                    onDragStart={(e) => e.preventDefault()}
-                    onContextMenu={(e) => e.preventDefault()}
-                />
-            </div>
+                <Link href="/">
+                    <Image src="/assets/image/logo.svg"
+                        width={short ? 60 : 125}
+                        height={40} alt="logo"
+                        onDragStart={(e) => e.preventDefault()}
+                        onContextMenu={(e) => e.preventDefault()}
+                        className="cursor-pointer"
+                    />
+                </Link>
+
+            </div>  
             {/* Desktop menu */}
             <div className="hidden md:flex gap-6">
                 <Link href="/">
