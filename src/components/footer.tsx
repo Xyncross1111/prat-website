@@ -92,7 +92,13 @@ export function Footer() {
         {/* Logo and Copyright */}
         <div className="pt-8 border-t border-gray-800">
           <div className="relative w-full h-20 mb-4">
-            <Image className="object-contain" src="/assets/image/logo.svg" layout="fill" alt="logo" />
+            <Image
+              className="object-contain"
+              src="/assets/image/logo.svg"
+              layout="fill"
+              alt="logo"
+              onDragStart={(e) => e.preventDefault()}
+              onContextMenu={(e) => e.preventDefault()} />
           </div>
           <p className="text-sm text-center text-gray-400">Copyright © 2025 Pratishruti. All Rights Reserved.</p>
         </div>
