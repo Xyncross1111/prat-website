@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function Sponsors() {
     const sponsors = [
-        "/assets/image/sponsors/burger_singh.png",
+        "/assets/image/sponsors/burgersingh.png",
         "/assets/image/sponsors/IDP.png",
         "/assets/image/sponsors/MICROSYSTEMS.png",
         "/assets/image/sponsors/PAREKH_BROTHERS.png",
