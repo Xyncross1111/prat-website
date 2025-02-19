@@ -14,7 +14,7 @@ export function Sponsors() {
     ]
 
     // Duplicate the array for a continuous marquee effect
-    const marqueeSponsors = [...sponsors, ...sponsors]
+    const marqueeSponsors = [...sponsors, ...sponsors, ...sponsors, ...sponsors]
 
     return (
         <div className="bg-black w-full py-6 overflow-hidden">
