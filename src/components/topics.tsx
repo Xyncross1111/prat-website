@@ -1,4 +1,4 @@
-import { TopicCard } from "@/components/topic-card"
+import { TopicCard } from "@/components/ui/topic-card"
 
 export const Topics = () => {
 

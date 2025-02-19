@@ -10,7 +10,6 @@ import { Ticker } from "@/components/ticker";
 import { WhatIs } from "@/components/whatIs";
 import { Speakers } from "@/components/speakers";
 import { Recap } from "@/components/recap";
-import { Socials } from "@/components/socials";
 import { Footer } from "@/components/footer";
 import { Sections } from "@/components/section";
 import { Sponsors } from "@/components/sponsors";
@@ -52,15 +51,12 @@ export default function PageContent() {
         <Hero />
         <Events />
         <Ticker />
-        
         <WhatIs />
         <Stats />
-        {/* <Attended /> */}
         <Sponsors />
         <Sections />
         <Speakers />
         <Recap />
-        <Socials />
         <Footer />
       </div>
     </motion.main>

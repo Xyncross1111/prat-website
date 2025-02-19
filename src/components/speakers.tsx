@@ -1,4 +1,4 @@
-import { SpeakerCard } from "@/components/speaker-card"
+import { SpeakerCard } from "@/components/ui/speaker-card"
 
 const artists = [
   {

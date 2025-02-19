@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "@/app/globals.css";
-import ParticleBackground from "@/components/particle-background";
+import ParticleBackground from "@/components/ui/particle-background";
 import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {

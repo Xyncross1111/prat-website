@@ -1,7 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
+// import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/solid';
+import { ChevronUpIcon, ChevronDownIcon } from 'lucide-react';
 import { Press_Start_2P, JetBrains_Mono } from 'next/font/google';
 
 const press2pstart = Press_Start_2P({
