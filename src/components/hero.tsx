@@ -3,7 +3,7 @@ export const Hero = () => {
         <section className="relative min-h-screen flex items-center px-6 md:px-12 pt-24">
             <div className="absolute inset-0 z-0">
                 <video
-                    src="/assets/video/hero.webm"
+                    src="/assets/video/hero.mp4"
                     autoPlay
                     loop
                     muted
