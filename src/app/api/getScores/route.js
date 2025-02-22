@@ -1,17 +1,12 @@
-import clientPromise from '@/lib/mongodb';
+import { getCachedScores } from "@/lib/cache";
 
-export async function GET(req) {
+export async function GET() {
     try {
-        const client = await clientPromise;
-        const db = client.db('test');
-        const collection = db.collection('leaderboards');
-
-        const users = await collection.find({}).toArray();
-
-        return new Response(JSON.stringify(users), { status: 200 });
-    } catch (error) {
+        const data = await getCachedScores();
+        return new Response(JSON.stringify(data), { status: 200 });
+    } catch (e) {
         console.error(error);
-        return new Response(JSON.stringify({ message: 'Internal Server Error' }), {
+        return new Response(JSON.stringify({ message: 'Error Fetching Scores' }), {
             status: 500,
         });
     }
