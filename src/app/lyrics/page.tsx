@@ -61,7 +61,6 @@ const LyricsPage = () => {
                 "Channa ve... Channa ve..."
             ]
         },
-
         sunmerehumsafar: {
             title: "Sun Mere Humsafar",
             artist: "Tulsi Kumar & Arijit Singh",
@@ -110,7 +109,6 @@ const LyricsPage = () => {
                 "Rahunga bas wahin umrr bhar, haaye"
             ]
         },
-
         minterabanjaunga: {
             title: "Main Tera Ban Jaunga",
             artist: "Akhil Sachdeva & Tulsi Kumar",
@@ -162,6 +160,143 @@ const LyricsPage = () => {
                 "Main tera ban jaaunga",
                 "Main tera ban jaaunga"
             ]
+        },
+        saanware: {
+            title: "Saanware",
+            artist: "Akanksha Bhandari",
+            verses: [
+                // Verse 1
+                [
+                    "Haan",
+                    "Haaye, karti hai jo tu aankh se ishaare",
+                    "Aankhon-aankhon mein jo pyaar se pukaare",
+                    "Mujhe kehne de, saath tere rehne de, ho-ho",
+                    "Chal, baithein, chal dariya kinaare",
+                    "Haan, dikhaun tujhe pyaar ke nazaare",
+                    "Mujhe kehne de, saath tere rehne de, ho"
+                ],
+                // Verse 2
+                [
+                    "Sun, maahiya, main taan dil haareya",
+                    "Sun, haaniya, mujhe thaam le zara",
+                    "Tu ban jaa mera, saanware, lut jaane de mujhe",
+                    "Ban jogi tere pyaar mein mit jaane de mujhe",
+                    "Tu ban jaa mera, saanware, lut jaane de mujhe",
+                    "Ban jogi tere pyaar mein mit jaane de mujhe, ho-ho"
+                ],
+                // Verse 3
+                [
+                    "Taare saare",
+                    "Teri aankhon mein chamkein iss qadar",
+                    "Chanda tarse",
+                    "Tarse teri chaandni ko raat-bhar",
+                    "Main bhi tadpoon jo tera na rahoon",
+                    "Jag chhadd jaaunga",
+                    "Juda jo tujhse, pata hai Rabb ko",
+                    "Main toh tera ban jaaunga"
+                ],
+                // Verse 4
+                [
+                    "Sun, heeriye, tu bhi dil haar jaa",
+                    "Sun, haaniya, mujhe thaam le zara",
+                    "Tu ban jaa mera, saanware, lut jaane de mujhe",
+                    "Ban jogi tere pyaar mein mit jaane de mujhe",
+                    "Tu ban jaa mera, saanware, lut jaane de mujhe",
+                    "Ban jogi tere pyaar mein mit jaane de mujhe, ho-ho"
+                ]
+            ],
+            chorus: [
+                "Ban gaya, ban gaya jogiya",
+                "Tera ban gaya, ban gaya jogiya",
+                "Tu ban jaa mera, saanware",
+                "Main ban gaya tera jogiya",
+                "Jogiya ve, jogiya ve, jogiya",
+                "Tera ban gaya, ban gaya jogiya",
+                "Tu ban jaa mera, saanware",
+                "Main ban gaya tera jogiya"
+            ]
+        },
+        galsun: {
+            title: "Gal Sun",
+            artist: "Prem & Hardeep",
+            verses: [
+                // Verse 1
+                [
+                    "Gal sun jaayin ja",
+                    "Ye mujhe batayin ja",
+                    "Kya hai mere dil ka kasoor",
+                    "Ishq da bulawa tu",
+                    "Mera parchhawa tu",
+                    "Ankhiyon se phir kyun hai door (x2)"
+                ],
+                // Verse 2
+                [
+                    "Keh le tu jo bhi hai kehna",
+                    "Behne de jheel se naina",
+                    "Lag mere seene se tu ro le",
+                    "O yaara mujhe apni laqeeron mein piro le"
+                ],
+                // Verse 3
+                [
+                    "Maine dar pe tere",
+                    "Laakhon sajde kiye",
+                    "Sirf uske liye Rabba…",
+                    "Jisko dil de diya",
+                    "Koi uske bina",
+                    "Jind kaise jiye o Rabba…"
+                ],
+                // Verse 4
+                [
+                    "Wo o.."
+                ],
+                // Verse 5
+                [
+                    "Haath se main tere",
+                    "Gir jaawan jo re",
+                    "Ho jaana main taan choor choor",
+                    "Je tu rooth jaye",
+                    "Je tu chhoot jaye",
+                    "Maar jaana main taan zaroor"
+                ],
+                // Verse 6
+                [
+                    "Keh le tu jo bhi hai kehna",
+                    "Behne de jheel se naina",
+                    "Lag mere seene se tu ro le",
+                    "O yaara mujhe apni laqeeron mein piro le"
+                ],
+                // Verse 7
+                [
+                    "Maine dar pe tere",
+                    "Laakhon sajde kiye",
+                    "Sirf uske liye Rabba…",
+                    "Jisko dil de diya",
+                    "Koi uske bina",
+                    "Jind kaise jiye o Rabba…"
+                ],
+                // Verse 8
+                [
+                    "Gal sun jaayin ja",
+                    "Ye mujhe batayin ja",
+                    "Gal sun jaayin ja",
+                    "Ye mujhe batayin ja"
+                ]
+            ],
+            chorus: [
+                "Tu mera sahaara hai",
+                "Tu hi mera saathi", 
+                "Baaki sab bharam hai dil janiya (x2)",
+                "",
+                "Saans abhi baaqi hai",
+                "Jaan abhi baaqi",
+                "Tera hi karam hai dil janiya"
+            ],
+            bridge: [
+                "Keh le tu jo bhi hai kehna",
+                "Behne de jheel se naina",
+                "Lag mere seene se tu ro le",
+                "O yaara mujhe apni laqeeron mein piro le"
+            ]
         }
     };
 
@@ -169,7 +304,7 @@ const LyricsPage = () => {
 
     return (
         <div className="min-h-screen bg-black relative">
-            <div className="bg-black shadow-sm sticky top-12 z-10">
+            <div className="bg-black shadow-sm sticky top-12 mb-2 z-10">
                 <div className="max-w-sm mx-auto px-4 py-3">
                     <select
                         value={selectedSong}
@@ -179,6 +314,8 @@ const LyricsPage = () => {
                         <option value="channave">Channa Ve</option>
                         <option value="sunmerehumsafar">Sun Mere Humsafar</option>
                         <option value="minterabanjaunga">Main Tera Ban Jaunga</option>
+                        <option value="saanware">Saanware</option>
+                        <option value="galsun">Gal Sun</option>
                     </select>
                 </div>
             </div>
