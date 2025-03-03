@@ -25,7 +25,7 @@ const artists = [
   {
     name: "LUV JUYAL",
     title: "Luv",
-    image: "/assets/image/kashish.webp",
+    image: "/assets/image/luv.png",
     instagram: "https://www.instagram.com/luvjuyal",
     youtube: "https://youtube.com/@luvjuyal"
   },
