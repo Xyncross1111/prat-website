@@ -4,18 +4,18 @@ import Image from "next/image"
 
 export function Sponsors() {
     const sponsors = [
-        "/assets/image/sponsors/burgersingh.png",
-        "/assets/image/sponsors/IDP.png",
-        "/assets/image/sponsors/MICROSYSTEMS.png",
-        "/assets/image/sponsors/PAREKH_BROTHERS.png",
-        "/assets/image/sponsors/WCFL.png",
-        "/assets/image/sponsors/222_BACKYARD.png",
-        "/assets/image/sponsors/byd.png",
-        "/assets/image/sponsors/garnet.png",
-        "/assets/image/sponsors/iquanta.png",
-        "/assets/image/sponsors/midlacc.png",
-        "/assets/image/sponsors/myfm.png",
-        "/assets/image/sponsors/subway.png",
+        "burgersingh.png",
+        "IDP.png",
+        "MICROSYSTEMS.png",
+        "PAREKH_BROTHERS.png",
+        "WCFL.png",
+        "222_BACKYARD.png",
+        "byd.png",
+        "garnet.png",
+        "iquanta.png",
+        "midlacc.png",
+        "myfm.png",
+        "subway.png",
     ]
 
     // Duplicate the array for a continuous marquee effect
@@ -34,7 +34,7 @@ export function Sponsors() {
                             {marqueeSponsors.map((src, index) => (
                                 <Image
                                     key={index}
-                                    src={src}
+                                    src={`/assets/image/sponsors/${src}`}
                                     alt="Sponsor Logo"
                                     width={80} // Smaller width for mobile
                                     height={60}
