@@ -13,7 +13,7 @@ interface EventCardProps {
 }
 
 export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark = true, googleFormLink }: EventCardProps) {
-  
+
   const backgrounds = [
     "/assets/image/event_card_bg1.webp",
     "/assets/image/event_card_bg2.webp",
@@ -21,9 +21,9 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
     "/assets/image/event_card_bg4.webp",
   ]
   const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)]
-  
+
   return (
-    <div className={`relative rounded-3xl overflow-hidden min-w-[400px] min-h-[450px] max-h-[500px] ${ isDark ? "bg-black text-white" : "bg-white text-black" }`}>
+    <div className={`relative rounded-3xl overflow-hidden min-w-[400px] min-h-[450px] max-h-[500px] ${isDark ? "bg-black text-white" : "bg-white text-black"}`}>
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -58,11 +58,10 @@ export function EventCard({ eventname, venue, imgPath, absImgPath, date, isDark 
           </div> */}
 
           <button
-            className={`text-black absolute bottom-0 right-0 flex items-center space-x-2 px-4 py-2 rounded-full ${
-              isDark ? "bg-white hover:bg-white/70" : "bg-black/10 hover:bg-black/20"
-            } transition-colors duration-200`}
+            className={`text-black absolute bottom-0 right-0 flex items-center space-x-2 px-4 py-2 rounded-full ${isDark ? "bg-white hover:bg-white/70" : "bg-black/10 hover:bg-black/20"
+              } transition-colors duration-200`}
           >
-            <span><a href={googleFormLink}>Register</a></span>
+            <span><a href={'/'}>P'26?</a></span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
