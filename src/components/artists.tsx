@@ -1,4 +1,4 @@
-import { SpeakerCard } from "@/components/ui/speaker-card"
+import { ArtistCard } from "@/components/ui/speaker-card"
 
 const artists = [
   {
@@ -14,10 +14,24 @@ const artists = [
     image: "/assets/image/kashish.webp",
     instagram: "https://www.instagram.com/djkashish_rathore",
     youtube: "https://www.youtube.com/channel/UC3Y_bDS-9_qYkrpHwNnIuRA"
-  }
+  },
+  {
+    name: "SOMESH SHARMA",
+    title: 'Outstation Comic',
+    image: "/assets/image/somesh.png",
+    instagram: "https://www.instagram.com/outstationcomic",
+    youtube: "https://youtube.com/@outstationcomic"
+  },
+  {
+    name: "LUV JUYAL",
+    title: "Luv",
+    image: "/assets/image/kashish.webp",
+    instagram: "https://www.instagram.com/luvjuyal",
+    youtube: "https://youtube.com/@luvjuyal"
+  },
 ]
 
-export const Speakers = () => {
+export const Artists = () => {
 
   const repeatCount = 5; // Duplicated twice for a seamless scroll
   const loopedArtists = Array.from({ length: repeatCount }, () => artists).flat();
@@ -50,7 +64,7 @@ export const Speakers = () => {
             <div className="flex gap-6 px-8">
               <div className="flex space-x-6 animate-scroll">
                 {loopedArtists.map((artist, index) => {
-                  return (<SpeakerCard
+                  return (<ArtistCard
                     key={index}
                     name={artist.name}
                     title={artist.title}
@@ -66,59 +80,3 @@ export const Speakers = () => {
     </section>
   )
 }
-
-// // bg-gradient-to-b from-black to-purple-900/20
-// <section className="py-12 md:py-24 w-full relative overflow-hidden">
-// <div className="px-6 md:px-12 w-full">
-//   <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-//     <span className="text-black">Artists</span>
-//     <br />
-//   </h2>
-//   {/* Full width speaker container */}
-//   <div className="w-full">
-
-//     <ScrollArea className="w-full">
-//     <div className="flex gap-6 pb-6">
-//       {artists.map((artist, index) => {
-//         return (<SpeakerCard
-//           key={index}
-//           name={artist.name}
-//           title={artist.title}
-//           image={artist.image}
-//           socials={artist.socials}
-//         />)
-//       })}
-//       </div>
-//     </ScrollArea>
-
-
-
-//     {/* <ScrollArea className="w-full">
-//       <div className="flex gap-6 pb-6">
-//         <SpeakerCard
-//           name="JORDAN MATTER"
-//           title='"Our" Youtuber in The World'
-//           image="/assets/image/art1.webp"
-//           socials={true}
-//         />
-//         {[1, 2, 3].map((i) => (
-//           <SpeakerCard
-//             key={i}
-//             name={`Speaker ${i}`}
-//             title="Influential Creator"
-//             image="/assets/image/art1.webp"
-//           />
-//         ))}
-//       </div>
-//       <ScrollBar orientation="horizontal" />
-//     </ScrollArea> */}
-//     {/*
-//     <div className="flex justify-center mt-12">
-//         <Button variant="outline" className="text-white border-white/20 hover:bg-white/10 transition-colors">
-//           MORE SPEAKERS
-//         </Button>
-//     </div>
-//     */}
-//   </div>
-// </div>
-// </section>

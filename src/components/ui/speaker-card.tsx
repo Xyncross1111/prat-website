@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Instagram, Youtube } from "lucide-react"
 
-interface SpeakerCardProps {
+interface ArtistCardProps {
   name: string
   title?: string
   image: string
@@ -11,7 +11,7 @@ interface SpeakerCardProps {
   youtube?: string
 }
 
-export function SpeakerCard({ name, title, image, instagram, youtube }: SpeakerCardProps) {
+export function ArtistCard({ name, title, image, instagram, youtube }: ArtistCardProps) {
   return (
     <Card className="relative overflow-hidden bg-zinc-900/50 backdrop-blur-md text-white border-0 rounded-3xl w-[280px] transition-all duration-300 hover:bg-zinc-800/50 hover:shadow-lg hover:shadow-purple-500/20">
       <div className="relative aspect-[3/4] overflow-hidden">

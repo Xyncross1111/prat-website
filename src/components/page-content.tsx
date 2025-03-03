@@ -8,7 +8,7 @@ import { Events } from "@/components/events";
 import { Stats } from "@/components/statistic";
 import { Ticker } from "@/components/ticker";
 import { WhatIs } from "@/components/whatIs";
-import { Speakers } from "@/components/speakers";
+import { Artists } from "@/components/artists";
 import { Recap } from "@/components/recap";
 import { Footer } from "@/components/footer";
 import { Sections } from "@/components/section";
@@ -55,7 +55,7 @@ export default function PageContent() {
         <Stats />
         <Sponsors />
         <Sections />
-        <Speakers />
+        <Artists />
         <Recap />
         <Footer />
       </div>
